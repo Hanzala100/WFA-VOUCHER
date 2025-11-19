@@ -1,27 +1,29 @@
-<div class="min-h-screen flex flex-col w-full bg-white">
-  <!-- navbar -->
-  <div class="flex justify-between w-full p-6 mb-12 h-12">
-    <img
-      src="../../../assets/images/wfalogo.jpeg"
-      alt="wfa logo"
-      class="h-10 cursor-pointer"
-      routerLink="/home"
-    />
-    <h1 class="text-black text-2xl font-extrabold">Your Vouchers</h1>
+<ion-content>
+  <div class="min-h-screen flex flex-col w-full bg-white">
+    <!-- navbar -->
+    <div class="flex justify-between w-full p-6 mb-12 h-12">
+      <img
+        src="../../../assets/images/wfalogo.jpeg"
+        alt="wfa logo"
+        class="h-10 cursor-pointer"
+        routerLink="/home"
+      />
+      <h1 class="text-black text-2xl font-extrabold">Your Vouchers</h1>
 
-    <img
-      src="../../../assets/images/exit.svg"
-      alt="exit"
-      class="h-8 cursor-pointer"
-    />
-  </div>
+      <img
+        src="../../../assets/images/exit.svg"
+        alt="exit"
+        class="h-8 cursor-pointer"
+      />
+    </div>
 
-  <!-- content -->
-  <div class="bg-[#4A462C] flex-1 rounded-t-lg w-full gap-2 overflow-y-auto">
-    <div class="p-6 flex flex-col items-center gap-4">
-      <app-voucher-card></app-voucher-card>
-      <app-voucher-card></app-voucher-card>
-      <app-voucher-card></app-voucher-card>
+    <!-- content -->
+    <div class="bg-[#4A462C] flex-1 rounded-t-lg w-full gap-2 overflow-y-auto">
+      <div class="p-6 flex flex-col items-center gap-4">
+        <app-voucher-card></app-voucher-card>
+        <app-voucher-card></app-voucher-card>
+        <app-voucher-card></app-voucher-card>
+      </div>
     </div>
   </div>
-</div>
+</ion-content>

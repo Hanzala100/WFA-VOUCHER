@@ -1,115 +1,134 @@
 <ion-content>
   <div
-    class="relative min-h-screen bg-no-repeat bg-cover flex flex-col pb-8 bg-[#000000] pb-20"
+    class="relative min-h-screen bg-no-repeat bg-cover flex flex-col bg-[#000000] pb-20"
   >
-    <div class="w-full h-20 flex">
-      <img
-        src="../../../assets/images/wfa-logo-home.png"
-        alt="wfa logo"
-        class="w-20 pl-4"
-      />
-      <img
-        src="../../../assets/images/wfa-red-logo.png"
-        alt="wfa logo"
-        class="w-24 pl-4"
-      />
+    <!-- Header Section   -->
+    <div class="w-full h-20 flex justify-between items-center px-6">
+      <div class="flex items-center">
+        <img
+          src="../../../assets/images/wfa-logo-home.png"
+          alt="wfa logo"
+          class="w-20"
+        />
+        <img
+          src="../../../assets/images/wfa-red-logo.png"
+          alt="wfa logo"
+          class="w-24 pl-4"
+        />
+      </div>
     </div>
-    <div class="mt-36 w-full flex flex-col justify-center items-center gap-8">
-      <!-- upper section  -->
-      <div class="flex flex-col justify-center gap-1">
-        <!-- main heading  -->
+
+    <!-- Main Content   -->
+    <div
+      class="mt-8 md:mt-20 lg:mt-36 w-full flex flex-col justify-center items-center gap-8 lg:gap-12"
+    >
+      <!-- Upper section   -->
+      <div class="flex flex-col justify-center gap-1 md:gap-2 w-full max-w-4xl">
+        <!-- Main heading   -->
         <h1
-          class="gold-text text-5xl font-semibold text-center uppercase leading-tight tracking-wide font-romans"
+          class="gold-text text-5xl md:text-6xl lg:text-7xl font-semibold text-center uppercase leading-tight tracking-wide font-romans"
         >
-          WFA VIP <br />
+          WFA VIP <br class="md:hidden" />
           WINE TASTING
         </h1>
 
-        <div class="w-full flex gap-2 items-center justify-center">
-          <div class="w-5 h-[2px] bg-white"></div>
-          <h2 class="text-white uppercase text-3xl font-romans">
+        <div class="w-full flex gap-2 items-center justify-center mt-2 md:mt-4">
+          <div class="w-5 md:w-8 h-[2px] bg-white"></div>
+          <h2 class="text-white uppercase text-3xl md:text-4xl font-romans">
             LAUNCH INVITATION
           </h2>
-          <div class="w-5 h-[2px] bg-white"></div>
+          <div class="w-5 md:w-8 h-[2px] bg-white"></div>
         </div>
-        <div class="w-full flex gap-2 items-center justify-center">
-          <h2 class="gold-text uppercase text-3xl">WFA品酒发布会邀请函</h2>
+        <div class="w-full flex gap-2 items-center justify-center mt-2">
+          <h2 class="gold-text uppercase text-3xl md:text-4xl">
+            WFA品酒发布会邀请函
+          </h2>
         </div>
       </div>
-      <!-- date, time menu  -->
-      <div class="w-full flex flex-col">
-        <!-- date  -->
-        <div class="w-full flex flex-col gap-2 justify-center items-center">
-          <div class="flex items-center gap-4 w-full px-6">
-            <div class="flex-1 h-[1px] bg-gold-gradient"></div>
 
+      <!-- Date, time, venue section  -->
+      <div
+        class="w-full max-w-3xl flex flex-col md:flex-row md:justify-between gap-6 md:gap-8 px-4"
+      >
+        <!-- Date -->
+        <div
+          class="w-full md:w-1/3 flex flex-col gap-2 justify-center items-center"
+        >
+          <div class="flex items-center gap-4 w-full px-2">
+            <div class="flex-1 h-[1px] bg-gold-gradient"></div>
             <div
               class="gold-text uppercase text-xl font-semibold whitespace-nowrap"
             >
               DATE / 日期
             </div>
-
             <div class="flex-1 h-[1px] bg-gold-gradient"></div>
           </div>
-
-          <p class="text-[#edd899cb] text-md uppercase">
-            October 30 & 31, 2025 | 2025年10月30日及31日
+          <p
+            class="text-[#edd899cb] text-md md:text-lg uppercase text-center mt-2"
+          >
+            October 30 & 31, 2025<br />
+            <span class="text-sm md:text-base">2025年10月30日及31日</span>
           </p>
         </div>
-        <!-- time  -->
-        <div class="w-full flex flex-col gap-2 justify-center items-center">
-          <div class="flex items-center gap-4 w-full px-6">
-            <div class="flex-1 h-[1px] bg-gold-gradient"></div>
 
+        <!-- Time -->
+        <div
+          class="w-full md:w-1/3 flex flex-col gap-2 justify-center items-center"
+        >
+          <div class="flex items-center gap-4 w-full px-2">
+            <div class="flex-1 h-[1px] bg-gold-gradient"></div>
             <div
               class="gold-text uppercase text-xl font-semibold whitespace-nowrap"
             >
               TIME / 时间
             </div>
-
             <div class="flex-1 h-[1px] bg-gold-gradient"></div>
           </div>
-
-          <p class="text-[#edd899cb] text-md uppercase">2:00 PM – 6:00 PM</p>
+          <p class="text-[#edd899cb] text-md md:text-lg uppercase mt-2">
+            2:00 PM – 6:00 PM
+          </p>
         </div>
 
-        <!-- venue -->
-        <div class="w-full flex flex-col gap-2 justify-center items-center">
-          <div class="flex items-center gap-4 w-full px-6">
+        <!-- Venue -->
+        <div
+          class="w-full md:w-1/3 flex flex-col gap-2 justify-center items-center"
+        >
+          <div class="flex items-center gap-4 w-full px-2">
             <div class="flex-1 h-[1px] bg-gold-gradient"></div>
-
             <div
               class="gold-text uppercase text-lg font-semibold whitespace-nowrap"
             >
               VENUE / 地点
             </div>
-
             <div class="flex-1 h-[1px] bg-gold-gradient"></div>
           </div>
-
-          <p class="text-[#edd899cb] text-md uppercase text-center">
+          <p
+            class="text-[#edd899cb] text-md md:text-lg uppercase text-center mt-2"
+          >
             2 Bayfront Avenue, #B2-01A,<br />The Shoppes at Marina Bay Sands,<br />Singapore
             018956
           </p>
         </div>
       </div>
 
-      <!-- lower section  -->
-      <div class="flex flex-col justify-center gap-1">
-        <!--  heading  -->
+      <!-- Lower section   -->
+      <div class="flex flex-col justify-center gap-1 w-full max-w-4xl px-4">
+        <!-- Heading -->
         <h1
-          class="gold-text text-3xl font-semibold text-center uppercase leading-tight tracking-wide font-romans"
+          class="gold-text text-3xl md:text-4xl lg:text-5xl font-semibold text-center uppercase leading-tight tracking-wide font-romans"
         >
-          EXPLORE THE WORLD<br />THROUGH WINE
+          EXPLORE THE WORLD<br class="md:hidden" />THROUGH WINE
         </h1>
 
-        <div class="w-full flex gap-2 items-center justify-center">
-          <h2 class="gold-text uppercase text-3xl tracking-wide">
+        <div class="w-full flex gap-2 items-center justify-center mt-2">
+          <h2 class="gold-text uppercase text-3xl md:text-4xl tracking-wide">
             以美酒探索世界
           </h2>
         </div>
 
-        <p class="text-[#edd899cb] text-center px-8">
+        <p
+          class="text-[#edd899cb] text-center px-4 md:px-12 lg:px-24 mt-4 text-lg md:text-xl leading-relaxed"
+        >
           Join us for an exclusive VIP Wine Tasting Experience MBS HAIDILAO as
           WFA ASIA unveils its innovative new Wine Dispenser Program, featuring
           16 curated SKUs – 8 reds and 8 whites — proudly supplied by WALA CLUB.
@@ -117,11 +136,13 @@
       </div>
     </div>
 
-    <!-- floating button  -->
-    <div class="fixed bottom-4 left-4 right-4 text-center z-10 px-4">
+    <!-- Floating button  -->
+    <div
+      class="fixed bottom-4 left-4 right-4 md:left-auto md:right-8 md:bottom-8 text-center z-10 px-4 md:w-64"
+    >
       <div
         routerLink="/vouchers"
-        class="rounded-full bg-gold text-white h-14 flex items-center justify-center font-bold text-xl cursor-pointer shadow-lg"
+        class="rounded-full bg-olive-gold-btn-gradient text-white h-14 flex items-center justify-center font-bold text-xl cursor-pointer shadow-lg hover:bg-opacity-90 transition-all duration-300"
       >
         Sign In
       </div>

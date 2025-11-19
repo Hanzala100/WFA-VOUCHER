@@ -6,7 +6,7 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background-color: #979066; /* Olive background from image */
+  background-color: #4a462c; /* Olive background from image */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,7 +74,7 @@ h2 {
 .price {
   font-size: 42px;
   font-weight: 400; /* Slightly thinner look typical of display fonts */
-  color: #979066; /* Matches background theme */
+  color: #4a462c; /* Matches background theme */
   letter-spacing: -1px;
 }
 
@@ -94,12 +94,9 @@ h2 {
 .btn {
   width: 100%;
   padding: 16px;
-  background-color: #979066;
-  color: white;
   border: none;
   border-radius: 50px; /* Pill shape */
   font-size: 16px;
-  font-weight: 400;
   cursor: pointer;
   transition: background 0.2s;
 }
@@ -136,7 +133,7 @@ h2 {
   position: absolute;
   width: 24px; /* full circle size */
   height: 24px;
-  background-color: #979066; /* page background */
+  background-color: #4a462c; /* page background */
   border-radius: 50%;
   top: 50%;
   transform: translate(

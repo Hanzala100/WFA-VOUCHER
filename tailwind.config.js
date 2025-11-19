@@ -38,15 +38,25 @@ module.exports = {
                         #E4B73D 100%
                       )`,
       'olive-gold-gradient': `linear-gradient(
+      90deg,
+      #5E5836 0%,     /* dark olive shadow */
+      #8F8753 15%,    /* warm olive base */
+      #C2B870 30%,    /* metallic gold rise */
+      #F8F1C4 45%,    /* bright gold highlight (shine) */
+      #D6C97C 60%,    /* taper highlight */
+      #AFA664 75%,    /* olive-gold mid tone */
+      #6E693E 100%    /* dark reflective end */
+    )`,
+      'olive-gold-btn-gradient': `linear-gradient(
   90deg,
-  #5E5836 0%,     /* dark olive shadow */
-  #8F8753 15%,    /* warm olive base */
-  #C2B870 30%,    /* metallic gold rise */
-  #F8F1C4 45%,    /* bright gold highlight (shine) */
-  #D6C97C 60%,    /* taper highlight */
-  #AFA664 75%,    /* olive-gold mid tone */
-  #6E693E 100%    /* dark reflective end */
+  #5E5836 0%,
+  #7C7447 20%,
+  #A89F63 40%,
+  #C2B870 60%,
+  #A89F63 80%,
+  #6E693E 100%
 )`,
+
 
 
 

@@ -1,6 +1,6 @@
 body {
   font-family: "Inter", sans-serif;
-  background-color: #979066; /* Olive background from image */
+  background-color: #4a462c; /* Olive background from image */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,7 +74,7 @@ h2 {
 .price {
   font-size: 42px;
   font-weight: 400; /* Slightly thinner look typical of display fonts */
-  color: #979066; /* Matches background theme */
+  color: #4a462c; /* Matches background theme */
   letter-spacing: -1px;
 }
 
@@ -188,7 +188,7 @@ h2 {
   position: absolute;
   width: 24px;
   height: 24px;
-  background-color: #979066; /* Match Body Background */
+  background-color: #4a462c; /* Match Body Background */
   border-radius: 50%;
   top: 50%;
   transform: translateY(-50%);

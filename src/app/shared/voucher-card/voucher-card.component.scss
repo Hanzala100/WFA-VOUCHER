@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #979066; /* Olive background from image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main Card Container */
+.voucher-card {
+  background-color: white;
+  width: 360px;
+  border-radius: 20px;
+  //   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  //   overflow: hidden; /* Keeps content inside rounded corners */
+  position: relative;
+}
+
+/* --- Top Section --- */
+.section-top {
+  padding: 24px 24px 20px 24px;
+}
+
+h2 {
+  font-size: 19px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  font-weight: 400;
+}
+
+/* --- Middle Section --- */
+.section-middle {
+  padding: 10px 24px 10px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-left {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.date-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+}
+
+.clock-icon {
+  width: 20px;
+  height: 20px;
+  /* Using SVG in HTML */
+}
+
+.price {
+  font-size: 42px;
+  font-weight: 400; /* Slightly thinner look typical of display fonts */
+  color: #979066; /* Matches background theme */
+  letter-spacing: -1px;
+}
+
+.gift-image {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  /* Rotate slightly if needed, but image usually comes straight */
+}
+
+/* --- Bottom Section --- */
+.section-bottom {
+  padding: 20px 24px 24px 24px;
+  text-align: center;
+}
+
+.btn {
+  width: 100%;
+  padding: 16px;
+  background-color: #979066;
+  color: white;
+  border: none;
+  border-radius: 50px; /* Pill shape */
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background-color: #7e795e;
+}
+
+.terms {
+  display: block;
+  margin-top: 12px;
+  font-size: 10px;
+  color: #888;
+}
+
+/* --- The Ticket Divider Magic --- */
+.divider-container {
+  position: relative;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* The dashed line */
+.dashed-line {
+  width: 100%;
+  border-top: 2px dashed #c0c0c0;
+  margin: 0 24px; /* Space from edges so line doesn't touch cutouts immediately */
+}
+
+.notch-left,
+.notch-right {
+  position: absolute;
+  width: 24px; /* full circle size */
+  height: 24px;
+  background-color: #979066; /* page background */
+  border-radius: 50%;
+  top: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* perfectly center vertically & horizontally */
+  z-index: 3;
+}
+.notch-left {
+  left: 0; /* anchor at card edge */
+}
+.notch-right {
+  right: 0;
+  transform: translate(50%, -50%); /* mirror */
+}

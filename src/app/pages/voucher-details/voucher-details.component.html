@@ -1,34 +1,54 @@
 <ion-content>
   <div
-    class="min-h-screen bg-[#4A462C] w-full h-full flex flex-col gap-2 items-center pb-10"
+    class="min-h-screen bg-[#4A462C] w-full h-full flex flex-col items-center pb-10 font-inter"
   >
-    <div class="flex items-center justify-between w-full px-6 py-8">
+    <!-- Header -->
+    <div class="flex items-center justify-between w-full px-6 py-8 max-w-7xl">
       <h1 class="text-white text-4xl font-extrabold">Voucher Details</h1>
 
-      <img
-        src="../../../assets/images/close.svg"
-        alt="exit"
-        class="h-10 w-10 cursor-pointer"
+      <button
+        class="h-10 md:w-10 cursor-pointer text-white"
         routerLink="/vouchers"
-      />
+      >
+        <img
+          src="../../../assets/images/close.svg"
+          alt="exit"
+          class="h-10 w-10 cursor-pointer"
+        />
+      </button>
     </div>
-    <div class="voucher-card overflow-auto">
-      <div class="section-top">
-        <h2>1 for 1 Wine experience voucher</h2>
-        <p class="subtitle">2 hours free flow wine</p>
+
+    <!-- Voucher Card -->
+    <div
+      class="bg-white w-10/12 max-w-md lg:max-w-lg xl:max-w-xl rounded-2xl shadow-lg overflow-auto mx-10"
+    >
+      <!-- Top Section -->
+      <div class="p-4 md:p-8">
+        <h2 class="text-lg md:text-xl font-bold text-gray-900">
+          1 for 1 Wine experience voucher
+        </h2>
+        <p class="text-sm md:text-base text-gray-600">2 hours free flow wine</p>
       </div>
 
-      <div class="divider-container">
-        <div class="notch-left"></div>
-        <div class="dashed-line"></div>
-        <div class="notch-right"></div>
+      <!-- Divider with notches -->
+      <div class="relative h-5 flex items-center">
+        <div
+          class="w-full border-t-2 border-dashed border-gray-300 mx-6 md:mx-8"
+        ></div>
+        <div
+          class="absolute -left-3 w-6 h-6 bg-[#4A462C] rounded-full transform -translate-y-1/2 top-1/2"
+        ></div>
+        <div
+          class="absolute -right-3 w-6 h-6 bg-[#4A462C] rounded-full transform -translate-y-1/2 top-1/2"
+        ></div>
       </div>
 
-      <div class="section-middle">
-        <div class="info-left">
-          <div class="date-row">
+      <!-- Middle Section -->
+      <div class="p-6 md:p-8 flex justify-between items-center">
+        <div class="flex flex-col gap-3">
+          <div class="flex items-center gap-2">
             <svg
-              class="clock-icon"
+              class="w-5 h-5"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -42,70 +62,127 @@
                 stroke-linejoin="round"
               />
             </svg>
-            <span>18th Nov 2025</span>
+            <span class="text-sm md:text-base font-semibold text-black"
+              >18th Nov 2025</span
+            >
           </div>
-          <div class="price">$49.90</div>
+          <div class="text-5xl font-normal text-[#4A462C]">$49.90</div>
         </div>
         <img
-          src="../../../assets/images/gift.svg"
+          src="assets/images/gift.svg"
           alt="Gift Box"
-          class="gift-image"
+          class="w-24 h-24 lg:w-28 lg:h-28 object-contain"
         />
       </div>
 
-      <div class="divider-container">
-        <div class="notch-left"></div>
-        <div class="dashed-line"></div>
-        <div class="notch-right"></div>
+      <!-- Divider with notches -->
+      <div class="relative h-5 flex items-center">
+        <div
+          class="w-full border-t-2 border-dashed border-gray-300 mx-6 md:mx-8"
+        ></div>
+        <div
+          class="absolute -left-3 w-6 h-6 bg-[#4A462C] rounded-full transform -translate-y-1/2 top-1/2"
+        ></div>
+        <div
+          class="absolute -right-3 w-6 h-6 bg-[#4A462C] rounded-full transform -translate-y-1/2 top-1/2"
+        ></div>
       </div>
 
-      <div class="expired-notice">
-        <h3>Expired Vouchers will not be Accepted</h3>
-        <ul>
-          <li>
-            WFA ASIA and Partner restaurants reserve the right to refuse service
-            to intoxicate guests.
+      <!-- Expired Notice Section -->
+      <div class="p-6 md:p-8">
+        <h3 class="text-sm md:text-base font-semibold text-gray-900 mb-3">
+          Expired Vouchers will not be Accepted
+        </h3>
+        <ul class="space-y-2">
+          <li class="flex items-start">
+            <span
+              class="w-1.5 h-1.5 bg-gray-800 rounded-full mt-1.5 mr-2 flex-shrink-0"
+            ></span>
+            <span class="text-xs md:text-sm text-gray-700">
+              WFA ASIA and Partner restaurants reserve the right to refuse
+              service to intoxicate guests.
+            </span>
           </li>
-          <li>
-            WFA ASIA reserves the right to attend or cancel this promotion
-            without prior notice.
+          <li class="flex items-start">
+            <span
+              class="w-1.5 h-1.5 bg-gray-800 rounded-full mt-1.5 mr-2 flex-shrink-0"
+            ></span>
+            <span class="text-xs md:text-sm text-gray-700">
+              WFA ASIA reserves the right to attend or cancel this promotion
+              without prior notice.
+            </span>
           </li>
         </ul>
       </div>
 
-      <div class="divider-container">
-        <div class="notch-left"></div>
-        <div class="dashed-line"></div>
-        <div class="notch-right"></div>
+      <!-- Divider with notches -->
+      <div class="relative h-5 flex items-center">
+        <div
+          class="w-full border-t-2 border-dashed border-gray-300 mx-6 md:mx-8"
+        ></div>
+        <div
+          class="absolute -left-3 w-6 h-6 bg-[#4A462C] rounded-full transform -translate-y-1/2 top-1/2"
+        ></div>
+        <div
+          class="absolute -right-3 w-6 h-6 bg-[#4A462C] rounded-full transform -translate-y-1/2 top-1/2"
+        ></div>
       </div>
 
-      <div class="terms-conditions">
-        <h3>Terms & Conditions</h3>
-        <ol>
-          <li>
-            Valid for a one-for-one (1-for-1) Wine For All two-hour free-flow
-            wine experience at regular price. Bring a friend to enjoy it for
-            free.
+      <!-- Terms & Conditions Section -->
+      <div class="p-6 md:p-8">
+        <h3 class="text-sm md:text-base font-semibold text-gray-900 mb-3">
+          Terms & Conditions
+        </h3>
+        <ol class="space-y-3 text-gray-900">
+          <li class="flex">
+            <span class="font-semibold mr-2 text-xs md:text-sm">1.</span>
+            <span class="text-xs md:text-sm text-gray-700">
+              Valid for a one-for-one (1-for-1) Wine For All two-hour free-flow
+              wine experience at regular price. Bring a friend to enjoy it for
+              free.
+            </span>
           </li>
-          <li>
-            Dine-in only at participating WFA ASIA partner restaurants. Current
-            location: Haidilao (Marina Bay Sands), 2 Bayfront Avenue, #B2-01 The
-            Shoppes at Marina Bay Sands, Singapore 018972. Advance reservation
-            is recommended.
+          <li class="flex">
+            <span class="font-semibold mr-2 text-xs md:text-sm">2.</span>
+            <span class="text-xs md:text-sm text-gray-700">
+              Dine-in only at participating WFA ASIA partner restaurants.
+              Current location: Haidilao (Marina Bay Sands), 2 Bayfront Avenue,
+              #B2-01 The Shoppes at Marina Bay Sands, Singapore 018972. Advance
+              reservation is recommended.
+            </span>
           </li>
-          <li>Voucher must be presented prior to ordering.</li>
-          <li>
-            Not exchangeable for cash and not valid in conjunction with other
-            promotions, discounts, or offers.
+          <li class="flex">
+            <span class="font-semibold mr-2 text-xs md:text-sm">3.</span>
+            <span class="text-xs md:text-sm text-gray-700">
+              Voucher must be presented prior to ordering.
+            </span>
           </li>
-          <li>
-            Valid for one-time use only. For guests aged 18 years and above.
+          <li class="flex">
+            <span class="font-semibold mr-2 text-xs md:text-sm">4.</span>
+            <span class="text-xs md:text-sm text-gray-700">
+              Not exchangeable for cash and not valid in conjunction with other
+              promotions, discounts, or offers.
+            </span>
           </li>
-          <li>Lost or damaged vouchers will not be replaced.</li>
-          <li>
-            Wine For All reserves the right to amend the terms and conditions
-            without prior notice and retains the right of final decision in the
-            event of any dispute.
+          <li class="flex">
+            <span class="font-semibold mr-2 text-xs md:text-sm">5.</span>
+            <span class="text-xs md:text-sm text-gray-700">
+              Valid for one-time use only. For guests aged 18 years and above.
+            </span>
+          </li>
+          <li class="flex">
+            <span class="font-semibold mr-2 text-xs md:text-sm">6.</span>
+            <span class="text-xs md:text-sm text-gray-700">
+              Lost or damaged vouchers will not be replaced.
+            </span>
+          </li>
+          <li class="flex">
+            <span class="font-semibold mr-2 text-xs md:text-sm">7.</span>
+            <span class="text-xs md:text-sm text-gray-700">
+              Wine For All reserves the right to amend the terms and conditions
+              without prior notice and retains the right of final decision in
+              the event of any dispute.
+            </span>
           </li>
         </ol>
       </div>
